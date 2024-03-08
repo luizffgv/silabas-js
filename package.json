@@ -1,0 +1,30 @@
+{
+  "name": "@luizffgv/silabas",
+  "description": "Um algoritmo de separação de sílabas em TypeScript.",
+  "author": "Luiz Fernando F. G. Valle <luizfvalle@pm.me>",
+  "bugs": {
+    "url": "https://github.com/luizffgv/silabas-js/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.25",
+    "typescript": "^5.4.2"
+  },
+  "files": [
+    "lib/"
+  ],
+  "homepage": "https://github.com/luizffgv/silabas-js#readme",
+  "license": "MIT",
+  "main": "lib/silabas.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luizffgv/silabas-js.git"
+  },
+  "scripts": {
+    "build": "tsc -p src/tsconfig.json && tsc -p src/tsconfig-decls.json",
+    "prepare": "npm run build && npm test",
+    "test": "node --test"
+  },
+  "type": "module",
+  "types": "lib/silabas.d.ts"
+}
