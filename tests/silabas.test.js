@@ -126,6 +126,8 @@ describe("Separação de sílabas", () => {
       suíno: ["su", "í", "no"],
       saída: ["sa", "í", "da"],
       vacuolar: ["va", "cu", "o", "lar"],
+      antibiótico: ["an", "ti", "bi", "ó", "ti", "co"],
+      freático: ["fre", "á", "ti", "co"],
     });
   });
 });
