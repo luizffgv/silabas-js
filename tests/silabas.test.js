@@ -62,6 +62,10 @@ describe("Separação de sílabas", () => {
     });
   });
 
+  test("QUA é apenas uma sílaba", () => {
+    verificarMapa({ quarta: ["quar", "ta"] });
+  });
+
   test("QUE é apenas uma sílaba", () => {
     verificarMapa({
       pequem: ["pe", "quem"],
@@ -73,6 +77,36 @@ describe("Separação de sílabas", () => {
     verificarMapa({
       pequim: ["pe", "quim"],
       pequi: ["pe", "qui"],
+    });
+  });
+
+  test("QUO é apenas uma sílaba", () => {
+    verificarMapa({
+      aquoso: ["a", "quo", "so"],
+    });
+  });
+
+  test("GUA é apenas uma sílaba", () => {
+    verificarMapa({
+      aguarde: ["a", "guar", "de"],
+    });
+  });
+
+  test("GUE é apenas uma sílaba", () => {
+    verificarMapa({
+      aguente: ["a", "guen", "te"],
+    });
+  });
+
+  test("GUI é apenas uma sílaba", () => {
+    verificarMapa({
+      guincho: ["guin", "cho"],
+    });
+  });
+
+  test("GUO é apenas uma sílaba", () => {
+    verificarMapa({
+      ambíguo: ["am", "bí", "guo"],
     });
   });
 
