@@ -114,6 +114,7 @@ describe("Separação de sílabas", () => {
     verificarMapa({
       mágoa: ["má", "goa"],
       água: ["á", "gua"],
+      vácuo: ["vá", "cuo"],
     });
   });
 
@@ -124,6 +125,7 @@ describe("Separação de sílabas", () => {
       abraão: ["a", "bra", "ão"],
       suíno: ["su", "í", "no"],
       saída: ["sa", "í", "da"],
+      vacuolar: ["va", "cu", "o", "lar"],
     });
   });
 });
