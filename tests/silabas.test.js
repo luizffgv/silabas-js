@@ -128,6 +128,7 @@ describe("Separação de sílabas", () => {
       água: ["á", "gua"],
       vácuo: ["vá", "cuo"],
       estrôncio: ["es", "trôn", "cio"],
+      leôncio: ["le", "ôn", "cio"],
     });
   });
 
