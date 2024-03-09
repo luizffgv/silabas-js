@@ -58,6 +58,7 @@ describe("Separação de sílabas", () => {
       objecto: ["ob", "jec", "to"],
       genro: ["gen", "ro"],
       enlata: ["en", "la", "ta"],
+      facção: ["fac", "ção"],
     });
   });
 
