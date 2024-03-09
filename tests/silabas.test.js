@@ -56,6 +56,8 @@ describe("Separação de sílabas", () => {
       algente: ["al", "gen", "te"],
       lista: ["lis", "ta"],
       objecto: ["ob", "jec", "to"],
+      genro: ["gen", "ro"],
+      enlata: ["en", "la", "ta"],
     });
   });
 
