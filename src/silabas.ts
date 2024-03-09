@@ -7,8 +7,8 @@
 function dividirHiatos(palavra: string, aposTonica: boolean = false): string[] {
   const hiatoIndice = palavra.match(
     aposTonica
-      ? /aa|aá|aã|ae|aé|aê|aí|ao|eã|ee|eé|eí|iã|ié|ii|ií|oã|oe|oé|oí|oo|oó|uí|uu/i
-      : /aa|aá|aã|ae|aé|aê|aí|ao|ea|eã|ee|eé|eí|eo|ia|iã|ie|ié|ii|ií|io|oa|oã|oe|oé|oí|oo|oó|(?<!g|q)ua|(?<!g|q)ue|uí|(?<!g|q)uo|uu/i
+      ? /aa|aá|aã|ae|aé|aê|aí|ao|aó|aú|eá|eã|ee|eé|eí|eó|eú|iá|iã|ié|ii|ií|ió|iú|oá|oã|oe|oé|oí|oo|oó|uá|ué|uí|uu|uó|uú/i
+      : /aa|aá|aã|ae|aé|aê|aí|ao|aó|aú|ea|eá|eã|ee|eé|eí|eo|eó|eú|ia|iá|iã|ie|ié|ii|ií|io|ió|iú|oa|oá|oã|oe|oé|oí|oo|oó|(?<!g|q)ua|uá|(?<!g|q)ue|ué|uí|(?<!g|q)uo|uó|uu|uú/i
   )?.index;
 
   if (hiatoIndice != null) {
