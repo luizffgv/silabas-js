@@ -127,6 +127,7 @@ describe("Separação de sílabas", () => {
       mágoa: ["má", "goa"],
       água: ["á", "gua"],
       vácuo: ["vá", "cuo"],
+      estrôncio: ["es", "trôn", "cio"],
     });
   });
 
