@@ -63,13 +63,19 @@ describe("Separação de sílabas", () => {
   });
 
   test("QUA é apenas uma sílaba", () => {
-    verificarMapa({ quarta: ["quar", "ta"] });
+    verificarMapa({
+      quarta: ["quar", "ta"],
+      aquário: ["a", "quá", "rio"],
+      quão: ["quão"],
+    });
   });
 
   test("QUE é apenas uma sílaba", () => {
     verificarMapa({
       pequem: ["pe", "quem"],
       saque: ["sa", "que"],
+      arquétipo: ["ar", "qué", "ti", "po"],
+      saquê: ["sa", "quê"],
     });
   });
 
@@ -77,30 +83,36 @@ describe("Separação de sílabas", () => {
     verificarMapa({
       pequim: ["pe", "quim"],
       pequi: ["pe", "qui"],
+      químico: ["quí", "mi", "co"],
     });
   });
 
   test("QUO é apenas uma sílaba", () => {
     verificarMapa({
       aquoso: ["a", "quo", "so"],
+      quórum: ["quó", "rum"],
     });
   });
 
   test("GUA é apenas uma sílaba", () => {
     verificarMapa({
       aguarde: ["a", "guar", "de"],
+      saguão: ["sa", "guão"],
+      manguá: ["man", "guá"],
     });
   });
 
   test("GUE é apenas uma sílaba", () => {
     verificarMapa({
       aguente: ["a", "guen", "te"],
+      ninguém: ["nin", "guém"],
     });
   });
 
   test("GUI é apenas uma sílaba", () => {
     verificarMapa({
       guincho: ["guin", "cho"],
+      sanguíneo: ["san", "guí", "neo"],
     });
   });
 
