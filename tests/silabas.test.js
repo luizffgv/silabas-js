@@ -87,6 +87,8 @@ describe("Separação de sílabas", () => {
       magoa: ["ma", "go", "a"],
       gazua: ["ga", "zu", "a"],
       abraão: ["a", "bra", "ão"],
+      suíno: ["su", "í", "no"],
+      saída: ["sa", "í", "da"],
     });
   });
 });
