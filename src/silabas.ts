@@ -44,7 +44,7 @@ function dividirSilabasSemDCSeDCI(
     const silabasA = dividirHiatos(subpalavraA, aposTonica);
     const silabasB = dividirSilabasSemDCSeDCI(
       subpalavraB,
-      /[áãéêíóõú]/i.test(silabasA[silabasA.length - 1].slice(-1))
+      /[áãéêíóôõú]/i.test(silabasA[silabasA.length - 1])
     );
 
     return [...silabasA, ...silabasB];
@@ -71,7 +71,7 @@ function dividirSilabasSemDCS(
     const silabasA = dividirSilabasSemDCSeDCI(subpalavraA, aposTonica);
     const silabasB = dividirSilabasSemDCS(
       subpalavraB,
-      /[áãéêíóõú]/i.test(silabasA[silabasA.length - 1].slice(-1))
+      /[áãéêíóôõú]/i.test(silabasA[silabasA.length - 1])
     );
 
     return [...silabasA, ...silabasB];
@@ -97,7 +97,7 @@ export function dividirSilabas(
     const silabasA = dividirSilabasSemDCS(subpalavraA, aposTonica);
     const silabasB = dividirSilabas(
       subpalavraB,
-      /[áãéêíóõú]/i.test(silabasA[silabasA.length - 1].slice(-1))
+      /[áãéêíóôõú]/i.test(silabasA[silabasA.length - 1])
     );
 
     return [...silabasA, ...silabasB];
