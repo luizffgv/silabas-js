@@ -33,7 +33,7 @@ function dividirSilabasSemDCSeDCI(
 ): string[] {
   // Divide a palavra no primeiro encontro consonantal entre vogais.
   const match = palavra.match(
-    /[aãâáeêéiíoôóuú]([bcdfghjklmnpqrtvwxyz]s([bcdfgjkpqtwxyz])|([bcdfgjkpqtwxyz])[lr]|[bcdfghjklmnpqrstvwxyz]?([bcçdfghjklmnpqrstvwxyz])[bcdfghjklmnpqrstvwxyz]?)[aãâáeêéiíoôóuú]/di
+    /[aãâáeêéiíoôóuú]([bcdfghjklmnpqrtvwxyz]s([bcdfgjkpqtwxyz])|([bcdfgjkpqtvwxyz])[lr]|[bcdfghjklmnpqrstvwxyz]?([bcçdfghjklmnpqrstvwxyz])[bcdfghjklmnpqrstvwxyz]?)[aãâáeêéiíoôóuú]/di
   );
   const encontroIndice =
     match?.indices?.[2]?.[0] ??
