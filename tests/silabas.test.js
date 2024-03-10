@@ -146,4 +146,8 @@ describe("Separação de sílabas", () => {
       freático: ["fre", "á", "ti", "co"],
     });
   });
+
+  test("INSTÂNCIA", () => {
+    verificarMapa({ instância: ["ins", "tân", "cia"] });
+  });
 });
