@@ -48,6 +48,7 @@ describe("Separação de sílabas", () => {
       macro: ["ma", "cro"],
       clicar: ["cli", "car"],
       substância: ["subs", "tân", "cia"],
+      lavra: ["la", "vra"],
     });
   });
 
