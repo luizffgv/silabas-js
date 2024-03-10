@@ -47,6 +47,7 @@ describe("Separação de sílabas", () => {
       mostra: ["mos", "tra"],
       macro: ["ma", "cro"],
       clicar: ["cli", "car"],
+      substância: ["subs", "tân", "cia"],
     });
   });
 
@@ -59,6 +60,7 @@ describe("Separação de sílabas", () => {
       genro: ["gen", "ro"],
       enlata: ["en", "la", "ta"],
       facção: ["fac", "ção"],
+      subsidiar: ["sub", "si", "di", "ar"],
     });
   });
 
