@@ -33,9 +33,12 @@ function dividirSilabasSemDCSeDCI(
 ): string[] {
   // Divide a palavra no primeiro encontro consonantal entre vogais.
   const match = palavra.match(
-    /[aãâáeêéiíoôóuú](([bcdfgjkpqtwxyz])[lr]|[bcdfghjklmnpqrstvwxyz]?([bcçdfghjklmnpqrstvwxyz])[bcdfghjklmnpqrstvwxyz]?)[aãâáeêéiíoôóuú]/di
+    /[aãâáeêéiíoôóuú]([bcdfgjkpqtwxyz]s([bcdfgjkpqtwxyz])|([bcdfgjkpqtwxyz])[lr]|[bcdfghjklmnpqrstvwxyz]?([bcçdfghjklmnpqrstvwxyz])[bcdfghjklmnpqrstvwxyz]?)[aãâáeêéiíoôóuú]/di
   );
-  const encontroIndice = match?.indices?.[2]?.[0] ?? match?.indices?.[3]?.[0];
+  const encontroIndice =
+    match?.indices?.[2]?.[0] ??
+    match?.indices?.[3]?.[0] ??
+    match?.indices?.[4]?.[0];
 
   if (encontroIndice != null) {
     const subpalavraA = palavra.slice(0, encontroIndice);
